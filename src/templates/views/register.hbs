@@ -1,0 +1,27 @@
+{{>header}}
+{{>navbar}}
+<div class="container" style="display:flex; justify-content:center;align-item:center;">
+    <form action="/register" method="POST" style="width: 400px; margin-top:5%">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="Email1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="number" class="form-control" id="phone" aria-describedby="phone" name="phone">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" aria-describedby="password" name="password">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword1" name="cpassword">
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+</div>
